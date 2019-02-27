@@ -1,3 +1,72 @@
 main {
     grid-area: main;
+
+    padding: 1em;
+}
+
+main.content{
+    background: #777;
+}
+
+
+/* Contact overwiew page */
+.contacts {
+    list-style: none;
+    margin: 0;
+}
+.contact:last-child {
+    border-bottom: none;
+}
+
+.contact {
+    background: #777;
+    padding: 1em;
+    border-bottom: 1px #666 solid;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    transition-duration: 200ms;
+    transition-property: background, transform, padding;
+}
+.contact:hover {
+    background: #888;
+    padding: 5vh 1em 5vh 1em;
+}
+.contact:hover .contact-name { background: #888; }
+.contact:hover .contact-buttons { background: #888; }
+.contact:hover .contact-buttons > a { background: #888; }
+
+.contact-name {
+    background: #777;
+    transition-duration: 200ms;
+    transition-property: background;
+    margin: 0;
+    align-self: center;
+}
+
+.contact-buttons {
+    justify-self: end;
+
+    transition-duration: 200ms;
+    transition-property: background;
+}
+
+.contact-buttons { background: #777; }
+.contact-buttons > a { 
+    background: #777;
+    
+    transition-duration: 200ms;
+    transition-property: background;
+}
+
+.contact-buttons > a > i {
+    background: #888;
+    border-radius: 50%;
+    transition-duration: 200ms;
+    transition-property: background, transform;
+}
+.contact-buttons > a > i:hover {
+    background: #aaa;
+    transform: scale(1.5);
 }

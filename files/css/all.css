@@ -4,15 +4,17 @@
     padding: 0;
     color: rgb(240,240,240);
     font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
 }
 
 body {
+    height: 100%;
     display: grid;
     grid-template-areas: "titlebar titlebar titlebar titlebar"
                          "sidebar main main main"
                          "sidebar footer footer footer";
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 5fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto 5fr auto;
 }
 
 .container {

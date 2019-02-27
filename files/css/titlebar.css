@@ -6,7 +6,6 @@ section.title-bar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    user-select: none;
     -webkit-app-region: drag;
 }
 
