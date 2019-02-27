@@ -1,0 +1,48 @@
+section.title-bar {
+    grid-area: titlebar;
+    color: red;
+    background: #333;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    user-select: none;
+    -webkit-app-region: drag;
+}
+
+section.title-bar > div.logo {
+    background: #333;
+
+    align-self: center;
+    padding-left: 1em;
+}
+
+section.title-bar > div.title-buttons {
+    justify-self: end;
+
+    background: #333;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-app-region: no-drag;
+}
+
+section.title-bar > div.title-buttons > div {
+    padding: 0.3em 1.2em;
+    margin: 0;
+    background: #333;
+    justify-content: center;
+    align-content: center;
+}
+
+section.title-bar > div.title-buttons > div.close-button:hover {
+    background: #c62828;
+}
+
+section.title-bar > div.title-buttons > div.minimize-button:hover {
+    background: #616161;
+}
+
+section.title-bar > div.title-buttons > div > i {
+    background: transparent;
+    transform: scale(0.7);
+}

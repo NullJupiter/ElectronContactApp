@@ -6,7 +6,8 @@ function createWindow() {
     window = new BrowserWindow({
         width: 800,
         height: 600,
-        title: 'Contact App'
+        title: 'Contact App',
+        frame: false
     });
 
     window.loadFile('files/html/main.html');
